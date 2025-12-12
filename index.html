@@ -217,7 +217,7 @@
 									  </div>
 									</div>
 									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
+									<div class="col-sm-6 col-md-7 mt-3 mt-md-0">
 									  <div class="about-info">
 										<p><span class="title-s">Name: </span> <span>Kartik Patel</span></p>
 										<p><span class="title-s">Job Role: </span> <span>Java Developer</span></p>
@@ -226,63 +226,81 @@
 									</div>
 								  </div>
 
-								<div class="skill-mf">
-									<br>
-									<p class="title-s">Skills</p>
-									<span>Core Java</span> <span class="pull-right">95%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Javascript</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>HTML</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>CSS</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
+								<div class="skills-section">
 
-									<span>JSP</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
+    <style>
+        .skills-section {
+            margin-top: 20px;
+        }
 
-									<span>JDBC</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>SpringBoot</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
+        .skills-title {
+            font-weight: 700;
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
 
-									<span>Data Structure</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px 20px;
+            margin-bottom: 35px;
+        }
 
-									<span>Cloud Foundation</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								</div>
+        .skill-item {
+            font-size: 16px;
+            color: #fff;
+            background: #111;                 /* clean dark card */
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: 0.3s ease;
+            border: 1px solid #222;
+        }
+
+        /* Hover Animation */
+        .skill-item:hover {
+            transform: translateY(-4px) scale(1.03);
+            background: #1c1c1c;
+            border-color: #f1c40f;
+            box-shadow: 0 0 10px rgba(241, 196, 15, 0.4);
+            cursor: pointer;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <p class="skills-title">Skills</p>
+
+    <div class="skills-grid">
+        <div class="skill-item">Core Java</div>
+        <div class="skill-item">JavaScript</div>
+        <div class="skill-item">HTML</div>
+        <div class="skill-item">CSS</div>
+        <div class="skill-item">JSP</div>
+        <div class="skill-item">JDBC</div>
+        <div class="skill-item">Spring Boot</div>
+        <div class="skill-item">Data Structures</div>
+        <div class="skill-item">Cloud Foundation</div>
+        <div class="skill-item">Data Science</div>
+        <div class="skill-item">GenAI (Generative AI)</div>
+    </div>
+
+    <p class="skills-title">Tools</p>
+
+    <div class="skills-grid">
+        <div class="skill-item">Git</div>
+        <div class="skill-item">GitHub</div>
+        <div class="skill-item">Power BI</div>
+        <div class="skill-item">AWS</div>
+    </div>
+
+</div>
+
 							</div>
 						</div>
 					</div>
@@ -294,19 +312,30 @@
 								<h1 class="big">About</h1>
 								<h2 class="mb-4">About Me</h2>
 								
-								<p>I am currently an intern at Extensile Private Limited, actively contributing to the development of Raktam.com—a social non-profit platform dedicated to ensuring reliable and secure blood availability across India.
+								<p>
+I am an intern at a growing startup, contributing to the development of <strong>ShramikShakti</strong> — a service booking platform designed to connect families with reliable local caregivers. My work focuses on building secure, scalable backend systems using <strong>Java and Spring Boot</strong>, ensuring smooth workflows and efficient data handling across the platform.
 
-My role involves leveraging my technical expertise in Core Java, JavaScript, HTML, CSS, JSP, JDBC, and SpringBoot to design and implement efficient, user-friendly solutions. I focus on building robust backend systems and intuitive interfaces that facilitate seamless connections between blood donors and recipients.
+I also work with <strong>AWS Cloud Deployment</strong> to deliver reliable, high-performance application environments. With a strong foundation in backend development and a problem-solving mindset, I am passionate about creating robust, user-centric solutions that address real-world needs.
+</p>
 
-With a solid foundation in Java Development and a keen interest in data-driven applications, I am adept at creating scalable web applications that address real-world challenges. My educational background in Engineering complements my technical skills, enabling me to approach problems with a structured and analytical mindset.</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Full Stack Java Developer</span></li>
-									<li class="d-flex"><span>Domain:</span> <span>Healthcare – Building secure, scalable applications for patient management, healthcare analytics, and resource optimization.</span></li>
-									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
-									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
-									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching</span></li>
-									
-								</ul>
+			<ul class="about-info mt-4 px-md-0 px-2">
+    				<li class="d-flex"><span>Profile:</span> <span>Backend Java Developer</span></li>
+
+   					<li class="d-flex"><span>Domain:</span> 
+       					 <span>Service Booking & Workforce Management – Building secure, scalable systems for real-time service allocation and user management.</span>
+    				</li>
+
+    				<li class="d-flex"><span>Tech Stack:</span> 
+        				<span>Java, Spring Boot, REST APIs, MySQL, AWS Cloud Deployment</span>
+   					</li>
+
+    				<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
+
+   					<li class="d-flex"><span>Languages:</span> <span>English, Hindi</span></li>
+
+   					<li class="d-flex"><span>Interests:</span> <span>Traveling, Photography</span></li>
+			</ul>
+
 							</div>
 						</div>
 
@@ -340,31 +369,60 @@ With a solid foundation in Java Development and a keen interest in data-driven a
         </div>
 
 		<div class="row">
-			<h1 class="big-4">Internship</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-		<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2025-Present</span>
-						<h2>Java Developer</h2>
-						<span class="position">Extensile Pvt. Limited Pune </span>
-						<p class="mt-4"> Raktam – Blood Donation Management System 
-							<ul>
-								<li> Developed a dynamic web application using JSP, Servlets, and JDBC for managing blood donation and requests across different
- regions.</li>
-								<li> Implemented core modules including user registration/login, donor search, blood request handling, and admin dashboard.</li>
-								<li> Designed and integrated MySQL database for storing donor and recipient information, ensuring efficient data retrieval and updates.</li>
-							    <li> Focused on building a responsive and user-friendly interface using HTML, CSS, and JavaScript.</li>
-							</ul>
-						</p>
-					</div>
+    <h1 class="big-4">Internship</h1>
+    <div class="underline"></div>
+</div>
+<br>
 
-				</div>
+<div class="row">
 
-			</div>
+    <!-- Internship 1 -->
+    <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+            <span class="date">2025</span>
+            <h2>Java Developer Intern</h2>
+            <span class="position">Extensile Pvt. Limited — Pune</span>
+
+            <p class="mt-4">
+                Contributed to the development of <strong>Raktam – Blood Donation Management System</strong>, a platform designed to streamline donor management and blood request workflows.
+            </p>
+
+            <ul>
+                <li>Developed core backend modules using <strong>JSP, Servlets, JDBC</strong> for donor search, authentication, and request processing.</li>
+                <li>Designed and optimized <strong>MySQL</strong> database schemas to ensure smooth and efficient data operations.</li>
+                <li>Built responsive front-end components using <strong>HTML, CSS, JavaScript</strong>.</li>
+                <li>Implemented role-based access and an admin dashboard for managing donors and requests.</li>
+                <li>Collaborated with the team to improve system performance and resolve production issues.</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- Internship 2 -->
+    <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+            <span class="date">2026 – Present</span>
+            <h2>Software Developer Intern</h2>
+            <span class="position">ShramikShakti (Startup) — Pune</span>
+
+            <p class="mt-4">
+                Working on <strong>ShramikShakti</strong>, a service booking platform that connects families with reliable caregivers and skilled workers.
+            </p>
+
+            <ul>
+                <li>Developing backend systems using <strong>Java, Spring Boot, REST APIs</strong> for booking, authentication, and user management.</li>
+                <li>Designing and maintaining scalable <strong>MySQL</strong> structures for efficient data storage and retrieval.</li>
+                <li>Building secure workflows such as request handling, worker allocation, and onboarding modules.</li>
+                <li>Collaborating with Web & Mobile teams to ensure seamless API integration.</li>
+                <li>Assisting with <strong>AWS Cloud Deployment</strong> for secure, stable, and production-level hosting.</li>
+                <li>Improving overall system architecture for reliability and long-term scalability.</li>
+            </ul>
+
+        </div>
+    </div>
+
+</div>
+
 
 		<br>
 		<br>
@@ -399,75 +457,161 @@ With a solid foundation in Java Development and a keen interest in data-driven a
 
    
 
-    <section class="ftco-section" id="project-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-            <p>Below are the sample projects on Java, Python, AIML, and SpringBoot </p>
+ <section class="ftco-section" id="project-section">
+  <div class="container">
+
+    <!-- INLINE CSS FOR PROJECTS SECTION -->
+    <style>
+      .blog-entry {
+        display: flex;
+        flex-direction: column;
+        background: #111;
+        border-radius: 10px;
+        padding-bottom: 20px;
+        height: 100%;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        transition: 0.3s ease-in-out;
+      }
+
+      .blog-entry:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 15px rgba(255,255,255,0.15);
+      }
+
+      .block-20 {
+        display: block;
+        width: 100%;
+        height: 200px !important; /* SAME HEIGHT FOR ALL IMAGES */
+        background-size: cover !important;
+        background-position: center !important;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .blog-entry .text {
+        flex-grow: 1;
+        padding: 0 10px;
+      }
+
+      .blog-entry .heading a {
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .blog-entry p {
+        color: #d5d5d5;
+        font-size: 15px;
+        line-height: 1.6;
+      }
+    </style>
+
+    <!-- SECTION HEADING -->
+    <div class="row justify-content-center mb-5 pb-5">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Projects</h1>
+        <h2 class="mb-4">Projects</h2>
+        <p>Below are sample projects built using Java, Python, AIML, SpringBoot, and Web Technologies.</p>
+      </div>
+    </div>
+
+    <!-- ROW 1 (3 PROJECTS) -->
+    <div class="row d-flex">
+
+      <!-- Project 1 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="https://github.com/Kartikpatel1806/Attendance_Using_Face_Recognition_Project"
+             class="block-20 zoom-effect"
+             style="background-image: url('images/Projj1.webp');"></a>
+
+          <div class="text mt-3">
+            <h3 class="heading">
+              <a href="https://github.com/Kartikpatel1806/Attendance_Using_Face_Recognition_Project">
+                Real-Time Face Recognition Attendance System
+              </a>
+            </h3>
+            <p>Python-based attendance solution using OpenCV, NumPy, Pandas, and Tkinter for real-time face detection and automated attendance marking.</p>
           </div>
         </div>
-        <div class="row d-flex">
-  <!-- Project 1 -->
-  <div class="col-lg-3 col-md-6 col-sm-12 d-flex ftco-animate">
-    <div class="blog-entry justify-content-end">
-      <a href="https://github.com/Kartikpatel1806/Attendance_Using_Face_Recognition_Project" class="block-20 zoom-effect" style="background-image: url('images/Projj1.webp');"></a>
-      <div class="text mt-3">
-        <h3 class="heading">
-          <a href="https://github.com/Kartikpatel1806/Attendance_Using_Face_Recognition_Project">
-            Real-Time Face Recognition Attendance System
-          </a>
-        </h3>
-        <p>Developed a Python-based attendance system using OpenCV, NumPy, Pandas, and Tkinter for real-time face recognition and automated attendance marking. Enabled image capture, model training, and live face detection to identify individuals and record attendance accurately.</p>
       </div>
-    </div>
-  </div>
 
-  <!-- Project 2 -->
-  <div class="col-lg-3 col-md-6 col-sm-12 d-flex ftco-animate">
-    <div class="blog-entry justify-content-end">
-      <a href="https://github.com/Kartikpatel1806/Tourist-Guide-System" class="block-20 zoom-effect" style="background-image: url('images/projj2.png');"></a>
-      <div class="text mt-3">
-        <h3 class="heading">
-          <a href="https://github.com/Kartikpatel1806/Tourist-Guide-System">WanderWise - Travel Companion</a>
-        </h3>
-        <p>Developed a web-based platform connecting tourists with local guides. Integrated features like destination search, guide booking, itinerary management, and interactive maps. Utilized HTML, CSS, JavaScript, Node.js, and MySQL for seamless functionality.</p>
+      <!-- Project 2 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="https://github.com/Kartikpatel1806/Tourist-Guide-System"
+             class="block-20 zoom-effect"
+             style="background-image: url('images/projj2.png');"></a>
+
+          <div class="text mt-3">
+            <h3 class="heading">
+              <a href="https://github.com/Kartikpatel1806/Tourist-Guide-System">
+                WanderWise – Travel Companion
+              </a>
+            </h3>
+            <p>A travel platform connecting tourists with guides featuring destination search, booking, itineraries, and maps using HTML, CSS, JS, Node.js, and MySQL.</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <!-- Project 3 -->
-  <div class="col-lg-3 col-md-6 col-sm-12 d-flex ftco-animate">
-    <div class="blog-entry justify-content-end">
-      <a href="https://github.com/Kartikpatel1806/KARVIS-Virtual-Assistant" class="block-20 zoom-effect" style="background-image: url('images/Karvis.png');"></a>
-      <div class="text mt-3">
-        <h3 class="heading">
-          <a href="https://github.com/Kartikpatel1806/KARVIS-Virtual-Assistant">K A R V I S - Virtual AI Assistant</a>
-        </h3>
-        <p>KARVIS (Kartik's AI Response & Voice Interaction System) is a smart, voice-controlled personal assistant built using HTML, CSS, and JavaScript. It can listen to your commands, talk back with a selected voice, and perform various tasks like opening websites, telling jokes, fetching weather, searching on Google, and much more — all from your browser.</p>
+      <!-- Project 3 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="https://github.com/Kartikpatel1806/KARVIS-Virtual-Assistant"
+             class="block-20 zoom-effect"
+             style="background-image: url('images/Karvis.png');"></a>
+
+          <div class="text mt-3">
+            <h3 class="heading">
+              <a href="https://github.com/Kartikpatel1806/KARVIS-Virtual-Assistant">
+                KARVIS – Virtual AI Assistant
+              </a>
+            </h3>
+            <p>A browser-based AI assistant built using HTML, CSS, and JavaScript capable of voice commands, weather fetching, answering queries, and automation.</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <!-- Project 4 -->
-  <div class="col-lg-3 col-md-6 col-sm-12 d-flex ftco-animate">
-    <div class="blog-entry justify-content-end">
-      <a href="https://github.com/Kartikpatel1806/Rest-API-Weather-Application" class="block-20 zoom-effect" style="background-image: url('images/projj3.png');"></a>
-      <div class="text mt-3">
-        <h3 class="heading">
-          <a href="https://github.com/Kartikpatel1806/Rest-API-Weather-Application">Weather App</a>
-        </h3>
-        <p>The Weather App provides real-time weather updates for any location. Users enter a location, and the app displays temperature, weather conditions, and AQI. It features a modern, gradient background, a clean semi-transparent card design, and responsive styling for all devices. Errors are clearly indicated, ensuring a smooth user experience.</p>
+    </div> <!-- END ROW 1 -->
+
+    <br>
+
+    <!-- ROW 2 (2 PROJECTS) -->
+    <div class="row d-flex">
+
+      <!-- Project 4 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="https://github.com/Kartikpatel1806/Rest-API-Weather-Application"
+             class="block-20 zoom-effect"
+             style="background-image: url('images/projj3.png');"></a>
+
+          <div class="text mt-3">
+            <h3 class="heading"><a href="#">Weather App</a></h3>
+            <p>Real-time weather & AQI application using REST APIs, gradient UI, responsive design, and error-handling for enhanced user experience.</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
-	<br>
-		<!-- added justify-content-center to center align the last two projects -->
-		
-    </section>
+      <!-- Project 5 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="https://github.com/Kartikpatel1806/KisanConnect"
+             class="block-20 zoom-effect"
+             style="background-image: url('images/KisanConnectimage.jpg');"></a>
+
+          <div class="text mt-3">
+            <h3 class="heading"><a href="#">KisanConnect – Farming Assistance Web Service</a></h3>
+            <p>A farming assistance system offering crop guidance, fertilizer recommendations, market insights, and weather-based suggestions using Java + Spring Boot.</p>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- END ROW 2 -->
+
+  </div>
+</section>
+
+
 
 	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
       
